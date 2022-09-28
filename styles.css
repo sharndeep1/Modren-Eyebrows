@@ -14,6 +14,12 @@ body {
   font-size:50px;
 }
 
+#styling{
+font-family:  'Courier New';
+font-size: 20px;
+color :red;
+font-style:
+}
 #design {
     display: flex;
     flex-direction: column;
@@ -25,7 +31,6 @@ body {
 #good {
   color: blue;
   border:  solid 1px;
-  solid black;
   background-color: yellow;
   font-size: 20px;
   margin:20px;
@@ -36,11 +41,37 @@ img{
   padding-top: 35px;
 
 }
-footer {
-  padding: .5em;
-  text-align:  cneter
- // background-color: #ADA8B6;
- ;
+
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+nav {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
+nav > i {
+  padding: 1rem;
+  font-size: 2em;
+}
+
+nav > ul {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 0;
+}
+
+nav > ul > li {
+  padding: 0.5rem;
+  list-style-type:  none;
+}
 

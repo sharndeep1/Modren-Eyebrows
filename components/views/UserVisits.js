@@ -1,7 +1,7 @@
 import html from "html-literal";
 
 export default (state) => html`
-  <section id="order">
+  <section id="userVisits">
     <form id="punch" method="POST" action="">
       <h2>Get A Punch</h2>
       <div>
@@ -24,10 +24,7 @@ export default (state) => html`
           name="Get A Stamp"
           value="stamp"
         />
-
-
-
-      <input type="submit" name="submit" value="Submit punch" />
-    </form>
-  </section>
+        <input type="submit" name="submit" value="Submit punch" />
+      </form>
+    </section>
 `;
