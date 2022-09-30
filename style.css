@@ -1,6 +1,5 @@
 body {
-  background: url();
-  background-color: aqua;
+    background-color: aqua;
   margin-left: 50px;
   color: #000000;
     font-family: 'Montserrat';
@@ -55,7 +54,7 @@ img{
 nav {
   display: flex;
   align-items: center;
-  flex-direction: column;
+  flex-direction:column;
 }
 
 nav > i {
@@ -66,7 +65,7 @@ nav > i {
 nav > ul {
   display: flex;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   padding: 0 0;
 }
 
