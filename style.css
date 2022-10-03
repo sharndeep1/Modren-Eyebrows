@@ -1,5 +1,5 @@
 body {
-    background-color: aqua;
+    background-color:aqua;
   margin-left: 50px;
   color: #000000;
     font-family: 'Montserrat';
@@ -24,13 +24,21 @@ font-style:
     flex-direction: column;
     align-items: right;
     }
+    #image {
+      display:inline-block;
+      vertical-align:top;
+      max-width:20%;
+      height: 20%;
+      float: right;
+
+    }
 
 
 
 #good {
-  color: blue;
+  color:blue;
   border:  solid 1px;
-  background-color: yellow;
+background-color:yellow;
   font-size: 20px;
   margin:20px;
 }
@@ -47,7 +55,7 @@ img{
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: red;
+  background-color:red;
   color: white;
   text-align: center;
 }
@@ -73,4 +81,38 @@ nav > ul > li {
   padding: 0.5rem;
   list-style-type:  none;
 }
+#services {
+  float:left;
+  width: 40%;
+  background-color: coral;
+  border-width:5px;
+  ;
+
+  }
+#services1 {
+  float: right;
+  width: 30%;
+  background-color: coral;
+  border-width:5px;
+}
+
+#services2 {
+  float: right;
+  width:30%;
+  background-color: pink;
+  border-width: 5px;
+}
+#facial{
+float:right;
+width:30%;
+}
+#facialPic {
+  float: left;
+  width:40%
+  height:auto;
+  margin-right: 1rem;
+}
+
+
+
 
