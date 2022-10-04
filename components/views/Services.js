@@ -16,7 +16,7 @@ export default (state) => html`
       </tr>
       <tr>
         <td> Diamond facial</td>
-        <td> combination skin  </td>
+        <td>normal skin </td>
         <td> $100 </td>
       </tr>
       <tr>

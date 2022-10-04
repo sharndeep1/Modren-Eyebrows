@@ -5,6 +5,7 @@ export default (state) => html`
   <h1 class ="creative" align = center>perfect skin by sharn</h1>
   <h2 align = center> The beauty skin </h2>
   </section>
+
   <section>
     <img src="./img/homepic.jpg"  id="image" alt="This text will show up, only if the image doesn't (also good for screen readers)"/>
     </section>
@@ -18,8 +19,10 @@ export default (state) => html`
     It is longer lasting and more sanitary then using a razer blade and wax.
     It can be used on any part of the face and body. the process only takes 3-5 mins.
     <p>
-
-
-
   </section>
+  <h3>
+  The weather in ${state.weather.city} is ${state.weather.description}.
+  Temperature is ${state.weather.temp}F, and it feels like
+  ${state.weather.feelsLike}F.
+  </h3>
 `;
