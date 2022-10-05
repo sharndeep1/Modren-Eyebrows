@@ -1,7 +1,7 @@
 import html from "html-literal";
 
 export default (state) => html`
-  <section id="whyfacial">
+  <section id="Whyfacial">
     <h2>Why Facials</h2>
     <img
       src = "../assets/img/facials.jpg" id="facialPic"     alt="me"
