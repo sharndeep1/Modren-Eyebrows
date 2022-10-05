@@ -20,7 +20,7 @@ export default (state) => html`
         <td> $100 </td>
       </tr>
       <tr>
-        <td> skin lightening facial</td>
+        <td> Skin lightening facial</td>
         <td> dry skin  </td>
         <td> $90 </td>
       </tr>

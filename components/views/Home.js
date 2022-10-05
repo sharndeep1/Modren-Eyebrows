@@ -7,7 +7,7 @@ export default (state) => html`
   </section>
 
   <section>
-    <img src="./img/homepic.jpg"  id="image" alt="This text will show up, only if the image doesn't (also good for screen readers)"/>
+    <img src="../assets/img/homepic.jpg"  id="image" alt="This text will show up, only if the image doesn't (also good for screen readers)"/>
     </section>
     <h3 align = center> about us </h3>
     <section>

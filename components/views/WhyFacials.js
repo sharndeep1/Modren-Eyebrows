@@ -4,7 +4,7 @@ export default (state) => html`
   <section id="whyfacial">
     <h2>Why Facials</h2>
     <img
-      src="./img/facialspic.jpg" id="facialPic"     alt="me"
+      src = "../assets/img/facials.jpg" id="facialPic"     alt="me"
     />
     <p id ="facial">
     Facials help to renew skin cells by circulating the blood flow under the skin, which then can decrease
