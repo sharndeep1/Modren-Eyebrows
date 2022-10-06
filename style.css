@@ -17,7 +17,7 @@ body {
 font-family:  'Courier New';
 font-size: 20px;
 color :red;
-font-style:
+
 }
 #design {
     display: flex;
@@ -115,7 +115,7 @@ width:30%;
 }
 #facialPic {
   float: left;
-  width:40%
+  width:40%;
   height:auto;
   margin-right: 1rem;
 }
