@@ -19,11 +19,7 @@ font-size: 20px;
 color :red;
 
 }
-#design {
-    display: flex;
-    flex-direction: column;
-    align-items: right;
-    }
+
     .home-img {
       display:inline-block;
       vertical-align:top;
@@ -114,10 +110,10 @@ float:right;
 width:30%;
 }
 #facialPic {
-  float: left;
+  float:left;
   width:40%;
   height:auto;
-  margin-right: 1rem;
+  margin-right:1rem;
 }
 
 
