@@ -1,14 +1,15 @@
 import html from "html-literal";
+import homeImage from "/assets/img/homepic.jpg";
+
 
 export default (state) => html`
   <section id="creative">
   <h1 class ="creative" align = center>perfect skin by sharn</h1>
   <h2 align = center> The beauty skin </h2>
   </section>
+  <img class="home-img" src="${homeImage}"
+  alt="This text will show up, only if the image doesn't (also good for screen readers)"/>
 
-  <section>
-    <img src="../assets/img/homepic.jpg"  id="image" alt="This text will show up, only if the image doesn't (also good for screen readers)"/>
-    </section>
     <h3 align = center> about us </h3>
     <section>
     <p id="good">

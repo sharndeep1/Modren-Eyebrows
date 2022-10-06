@@ -1,11 +1,13 @@
 import html from "html-literal";
+import facialImage from "/assets/img/facials.jpg";
+
 
 export default (state) => html`
   <section id="Whyfacial">
     <h2>Why Facials</h2>
-    <img
-      src = "../assets/img/facials.jpg" id="facialPic"     alt="me"
-    />
+    <img class="facial-img" src="${facialImage}"
+  alt="This text will show up, only if the image doesn't (also good for screen readers)"/>
+
     <p id ="facial">
     Facials help to renew skin cells by circulating the blood flow under the skin, which then can decrease
     puffiness and fluid build up that comes from our lymphatic system. Good circulation is important in that it
