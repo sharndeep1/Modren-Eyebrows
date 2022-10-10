@@ -32,9 +32,9 @@ color :red;
 
     .facial-img {
       display:inline-block;
-      vertical-align:top;
+      vertical-alinpgn:top;
       max-width:50%;
-      height: 500%;
+      height: auto;
       float: left;
 
     }
