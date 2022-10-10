@@ -19,14 +19,15 @@ font-size: 20px;
 color :red;
 
 }
-
-    .home-img {
-      display:inline-block;
-      vertical-align:top;
+.home-img {
+      /* display:inline-block; */
+      /* vertical-align:top; */
       max-width:20%;
       height: 20%;
-      float: right;
-
+      /* float: right; */
+      margin-right: auto;
+      margin-left: auto;
+      display: flex;
     }
 
     .facial-img {
