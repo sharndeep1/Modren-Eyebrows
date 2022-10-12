@@ -21,10 +21,6 @@ db.once(
   "open",
   console.log.bind(console, "Successfully opened connection to Mongo!")
 );
-
-
-
-
 // CORS Middleware
 const cors = (req, res, next) => {
   res.setHeader(
