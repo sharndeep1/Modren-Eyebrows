@@ -27,7 +27,44 @@ function afterRender(state) {
   document.querySelector(".fa-bars").addEventListener("click", () => {
     document.querySelector("nav > ul").classList.toggle("hidden--mobile");
   });
-}
+  if (state.view === "Uservisits") {
+    document.querySelector("form").addEventListener("submit", event => {
+      event.preventDefault();
+
+      const inputList = event.target.elements;
+      console.log("Input Element List", inputList);
+
+      //const punch = [];
+      // Interate over the punch input group elements
+      // for (let input of inputList) {
+      //   // If the value of the checked attribute is true then add the value to the punch array
+      //   if (input.checked) {
+      //     punch.push(input.value);
+      //   }
+      // }
+
+      const requestData = {
+
+        userName: inputList.username.value,
+        phoneNo: inputList.phoneNo.value,
+        punch: inputList.stamp.value
+      };
+      console.log("request Body", requestData);
+
+      axios
+        .post(`${process.env.PUNCH_API_URL}`, requestData)
+        .then(response => {
+
+        })
+        .catch(error => {
+          console.log("It puked", error);
+        });
+    });
+  }
+
+  }
+
+
 
 router.hooks({
   before: (done, params) => {

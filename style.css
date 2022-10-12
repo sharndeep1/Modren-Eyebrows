@@ -20,11 +20,8 @@ color :red;
 
 }
 .home-img {
-      /* display:inline-block; */
-      /* vertical-align:top; */
       max-width:20%;
       height: 20%;
-      /* float: right; */
       margin-right: auto;
       margin-left: auto;
       display: flex;
@@ -32,7 +29,7 @@ color :red;
 
     .facial-img {
       display:inline-block;
-      vertical-alinpgn:top;
+      vertical-align:top;
       max-width:50%;
       height: auto;
       float: left;
@@ -42,7 +39,7 @@ color :red;
 #good {
   color:blue;
   border:  solid 1px;
-background-color:yellow;
+background-color:lightsalmon;
   font-size: 20px;
   margin:20px;
 }
