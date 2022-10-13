@@ -104,11 +104,15 @@ nav > ul > li {
   border-width: 5px;
 }
 #facial{
-float:right;
+display:flex;
+flex-direction: row;
+justify-content: right;
 width:30%;
 }
 #facialPic {
-  float:left;
+  display:flex;
+  flex-direction: row;
+  justify-content: right;
   width:40%;
   height:auto;
   margin-right:1rem;
