@@ -27,21 +27,32 @@ function afterRender(state) {
   document.querySelector(".fa-bars").addEventListener("click", () => {
     document.querySelector("nav > ul").classList.toggle("hidden--mobile");
   });
+
+
   if (state.view === "Uservisits") {
-    document.querySelector("form").addEventListener("submit", event => {
+    document.getElementById("count").addEventListener("submit", event => {
       event.preventDefault();
 
       const inputList = event.target.elements;
       console.log("Input Element List", inputList);
 
-      //const punch = [];
-      // Interate over the punch input group elements
-      // for (let input of inputList) {
-      //   // If the value of the checked attribute is true then add the value to the punch array
-      //   if (input.checked) {
-      //     punch.push(input.value);
-      //   }
-      // }
+      axios
+        .get(`${process.env.COUNT_API_URL}?id=${inputList.countPhoneNo.value}&type=${inputList.countStamp.value}`)
+        .then(response => {
+          store.Uservisits.punchCount = response.data.count;
+          console.log(store.Uservisits);
+          router.navigate("/Uservisits");
+        })
+        .catch(error => {
+          console.log("It puked", error);
+        });
+    });
+
+    document.getElementById("punch").addEventListener("submit", event => {
+      event.preventDefault();
+
+      const inputList = event.target.elements;
+      console.log("Input Element List", inputList);
 
       const requestData = {
 
@@ -63,9 +74,6 @@ function afterRender(state) {
   }
 
   }
-
-
-
 router.hooks({
   before: (done, params) => {
     const view =
@@ -99,9 +107,26 @@ switch (view) {
       })
       .catch(err => console.log(err));
     break;
-    default:
+    //  case "Uservisits":
+    //     axios
+    //        .get(`${process.env.COUNT_API_URL}`)
+    //        .then(response => {
+    //            store.Uservisits.punchCount = response.data.length;
+    //           done();
+    //        })
+    //    .catch(error => {
+    //       console.log("It puked", error);
+    //         done();
+    //        });
+    //     break;
+     default:
       done();
   }
+},
+already: (params) => {
+  const view = params && params.data && params.data.view ? capitalize(params.data.view) : "Home";
+
+  render(store[view]);
 }
 });
 
@@ -112,3 +137,4 @@ router.on({
     render(store[view]);
   }
 }).resolve();
+

@@ -7,7 +7,7 @@ const UserPunchSchema = new mongoose.Schema({
   },
   phoneNo: {
     type: Number,
-    required: true,
+    required: true
     //max: 10,
     //min:  10
   },
@@ -16,7 +16,6 @@ const UserPunchSchema = new mongoose.Schema({
     required: true,
     enum:["Threading","Facials","waxing"]
   },
-
 });
 
 const UserPunch = mongoose.model('UserPunch', UserPunchSchema);

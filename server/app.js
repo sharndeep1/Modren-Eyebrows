@@ -5,7 +5,7 @@ const express = require("express");
 const mongoose = require('mongoose');
 const dotenv = require("dotenv");
 const userPunch= require("./routers/userPunch");
-
+const counts=require("./routers/counts");
 
 
 dotenv.config();
@@ -44,6 +44,8 @@ app.use(cors);
 app.use(express.json());
 app.use(logging);
 app.use("/userPunch", userPunch);
+app.use("/counts",counts);
+
 
 // Handle the request with HTTP GET method from http://localhost:4040/status
 app.get("/status", (request, response) => {

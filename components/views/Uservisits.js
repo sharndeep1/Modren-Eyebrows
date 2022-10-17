@@ -1,7 +1,32 @@
 import html from "html-literal";
 
 export default (state) => html`
-  <section id="Uservisits">
+<section id="PunchCounts">
+<form id="count" method="POST" action="">
+<label for="PhoneNo">PhoneNo:</label>
+<input
+        type="tel"
+        name="countPhoneNo"
+        id="countPhoneNo"
+        placeholder="Enter Your Phone No"
+        required
+      />
+      <div>
+        <label for="countStamp">Stamp:</label>
+        <select id="countStamp" name="countStamp">
+          <option value="">Select a Services</option>
+          <option value="Threading">Eyebrows</option>
+          <option value="Facials">facial</option>
+          <option value="waxing">waxing</option>
+        </select>
+      </div>
+      <label for="checkCount">CheckCount:</label>
+      <input type="submit" name="submit" value=" Count submit Punches" />
+
+
+      <div>Count: ${state.punchCount}</div>
+    </form>
+
     <form id="punch" method="POST" action="">
       <h2>Get A Punch</h2>
       <div>
@@ -34,6 +59,9 @@ export default (state) => html`
         />
         </div>
         <input type="submit" name="submit" value="Submit punch" />
+
       </form>
+
     </section>
+
 `;

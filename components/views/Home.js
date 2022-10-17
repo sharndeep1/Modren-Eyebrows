@@ -4,8 +4,8 @@ import homeImage from "/assets/img/homepic.jpg";
 
 export default (state) => html`
   <section id="creative">
-  <h1 class ="creative" align = center>perfect skin by sharn</h1>
-  <h2 align = center> The beauty skin </h2>
+  <h1 class ="creative" align = center>Perfect Eyebrows by sharn</h1>
+  <h2 align = center>Perfectly threaded eyebrows every time </h2>
   </section>
   <img class="home-img" src="${homeImage}"
   alt="This text will show up, only if the image doesn't (also good for screen readers)"/>

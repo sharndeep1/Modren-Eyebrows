@@ -2,6 +2,8 @@ import html from "html-literal";
 
 export default (state) => html`
   <section id="service">
+  <div>
+  <div>
     <table id="services" border="1">
     <caption><b>Facials</b></caption>
       <tr>
@@ -49,6 +51,8 @@ export default (state) => html`
       <td>normal skin  </td>
       <td> $90 </td>
     </table>
+    </div>
+    <div>
     <table id="services1" border="1">
     <caption><b>Threading</b></caption>
       <tr>
@@ -88,6 +92,8 @@ export default (state) => html`
         <td> $40 </td>
       </tr>
     </table>
+    </div>
+    <div>
     <table id="services2" border="1">
     <caption><b> Waxing </b></caption>
       <tr>
@@ -127,5 +133,7 @@ export default (state) => html`
         <td> $40 </td>
       </tr>
     </table>
+    </div>
+    </div>
   </section>
 `;

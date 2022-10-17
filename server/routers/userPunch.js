@@ -10,7 +10,13 @@ router.post("/", (request, response) => {
     return response.json(record);
   });
 });
-
+// Get (read) all records from the collection
+router.get("/count", (request, response) => {
+  UserPunch.find({phoneNo: Number(request.query.id), punch: request.query.type}, (error, record) => {
+    if (error) return response.status(500).json(error);
+    return response.json({count:record.length});
+  });
+});
 // Get (read) all records from the collection
 router.get("/", (request, response) => {
   UserPunch.find({}, (error, record) => {
@@ -18,8 +24,6 @@ router.get("/", (request, response) => {
     return response.json(record);
   });
 });
-
-
 
 
 

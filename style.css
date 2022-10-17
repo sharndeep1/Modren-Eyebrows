@@ -87,6 +87,7 @@ nav > ul > li {
   width: 40%;
   background-color: coral;
   border-width:5px;
+
   ;
 
   }
@@ -95,6 +96,7 @@ nav > ul > li {
   width: 30%;
   background-color: coral;
   border-width:5px;
+
 }
 
 #services2 {
@@ -102,20 +104,29 @@ nav > ul > li {
   width:30%;
   background-color: pink;
   border-width: 5px;
+
 }
+.container{
+  position: relative;
+  text-align:justify;
+  color: black;
+
+}
+
 #facial{
-display:flex;
-flex-direction: row;
-justify-content: right;
-width:30%;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  margin-right:10%;
+
 }
-#facialPic {
-  display:flex;
-  flex-direction: row;
-  justify-content: right;
-  width:40%;
+
+.facial-img {
+  float: left;
+  width: 40%;
   height:auto;
-  margin-right:1rem;
+
+
 }
 
 

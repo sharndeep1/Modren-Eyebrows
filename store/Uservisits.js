@@ -1,5 +1,6 @@
 export default {
   header: "Track User Visits",
-  view: "Uservisits"
+  view: "Uservisits",
+  punchCount: []
 };
 
