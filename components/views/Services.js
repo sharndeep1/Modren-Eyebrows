@@ -2,7 +2,48 @@ import html from "html-literal";
 
 export default (state) => html`
   <section id="service">
+  <div class= "allTables">
   <div>
+  <table id="services1" border="1">
+  <caption><b>Threading</b></caption>
+    <tr>
+      <th>Services</th>
+      <th>Prices</th>
+    </tr>
+    <tr>
+      <td> Eyebrow</td>
+      <td> $12 </td>
+    </tr>
+    <tr>
+      <td> Eyebrow Tinting </td>
+      <td> $12 </td>
+    </tr>
+    <tr>
+      <td> UpperLip</td>
+      <td> $6 </td>
+    </tr>
+    <tr>
+      <td>LowerLip </td>
+      <td> $3</td>
+    </tr>
+    <tr>
+      <td>chin</td>
+      <td> $6 </td>
+    </tr>
+    <tr>
+      <td>Sideburns </td>
+      <td> $16 </td>
+    </tr>
+    <tr>
+      <td>Neck</td>
+      <td> $6 </td>
+    </tr>
+    <tr>
+      <td>Full Face</td>
+      <td> $40 </td>
+    </tr>
+  </table>
+  </div>
   <div>
     <table id="services" border="1">
     <caption><b>Facials</b></caption>
@@ -52,47 +93,7 @@ export default (state) => html`
       <td> $90 </td>
     </table>
     </div>
-    <div>
-    <table id="services1" border="1">
-    <caption><b>Threading</b></caption>
-      <tr>
-        <th>Services</th>
-        <th>Prices</th>
-      </tr>
-      <tr>
-        <td> Eyebrow</td>
-        <td> $12 </td>
-      </tr>
-      <tr>
-        <td> Eyebrow Tinting </td>
-        <td> $12 </td>
-      </tr>
-      <tr>
-        <td> UpperLip</td>
-        <td> $6 </td>
-      </tr>
-      <tr>
-        <td>LowerLip </td>
-        <td> $3</td>
-      </tr>
-      <tr>
-        <td>chin</td>
-        <td> $6 </td>
-      </tr>
-      <tr>
-        <td>Sideburns </td>
-        <td> $16 </td>
-      </tr>
-      <tr>
-        <td>Neck</td>
-        <td> $6 </td>
-      </tr>
-      <tr>
-        <td>Full Face</td>
-        <td> $40 </td>
-      </tr>
-    </table>
-    </div>
+
     <div>
     <table id="services2" border="1">
     <caption><b> Waxing </b></caption>

@@ -11,10 +11,11 @@ body {
   color:red;
   font-family:cursive;
   font-size:50px;
+
 }
 
 #styling{
-font-family:  'Courier New';
+font-family:'Courier New';
 font-size: 20px;
 color :red;
 
@@ -39,9 +40,11 @@ color :red;
 #good {
   color:black;
   border:  solid 1px;
-background-color:lightsalmon;
+  background-color:lightsalmon;
   font-size: 20px;
-  margin:20px;
+  text-align:justify;
+  margin:10px;
+  padding: 10px;
 }
 
 
@@ -60,6 +63,7 @@ img{
   color: white;
   text-align: center;
 }
+
 nav {
   display: flex;
   align-items: center;
@@ -82,52 +86,76 @@ nav > ul > li {
   padding: 0.5rem;
   list-style-type:  none;
 }
+
+.allTables{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 60px;
+}
+
 #services {
-  float:left;
-  width: 40%;
-  background-color: coral;
+  background-color: pink;
   border-width:5px;
+  margin: auto;
+}
 
-  ;
-
-  }
 #services1 {
-  float: right;
-  width: 30%;
   background-color: coral;
   border-width:5px;
-
+  margin:auto;
 }
 
 #services2 {
-  float: right;
-  width:30%;
-  background-color: pink;
+   background-color: coral;
   border-width: 5px;
-
+  margin:auto;
 }
+
 .container{
   position: relative;
   text-align:justify;
   color: black;
-
 }
 
-#facial{
+#facial {
   position: absolute;
   top: 50%;
   left:50%;
   margin-right:10%;
-
 }
 
 .facial-img {
   float: left;
   width: 40%;
   height:auto;
-
-
 }
+
+@media (min-width: 375px) {
+  nav > .fa-bars {
+    display: none;
+  }
+}
+/* in HTML: <ul class="hidden--mobile"> */
+@media (max-width: 375px) {
+  .hidden--mobile {
+    display: flex;
+    flex-direction:column-reverse;
+    align-content: center;
+}
+}
+
+@media (max-width: 375px) {
+  #facial {
+    display:flex;
+    flex-direction: row-reverse;
+    align-content: right;
+    font-size: 40%;
+}
+}
+
+
+
 
 
 
