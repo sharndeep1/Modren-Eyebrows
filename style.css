@@ -11,31 +11,29 @@ body {
   color:red;
   font-family:cursive;
   font-size:50px;
-
 }
 
 #styling{
-font-family:'Courier New';
-font-size: 20px;
-color :red;
-
+  font-family:'Courier New';
+  font-size: 20px;
+  color :red;
 }
+
 .home-img {
-      max-width:20%;
-      height: 20%;
-      margin-right: auto;
-      margin-left: auto;
-      display: flex;
+  max-width:25%;
+  height: 20%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
     }
 
-    .facial-img {
-      display:inline-block;
-      vertical-align:top;
-      max-width:50%;
-      height: auto;
-      float: left;
-
-    }
+.facial-img {
+  display:inline-block;
+  vertical-align:top;
+  max-width:50%;
+  height: auto;
+  float: left;
+}
 
 #good {
   color:black;
@@ -47,12 +45,10 @@ color :red;
   padding: 10px;
 }
 
-
 img{
   padding-top: 35px;
 
 }
-
 
 .footer {
   position: fixed;
@@ -131,30 +127,54 @@ nav > ul > li {
   height:auto;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 550px) {
   nav > .fa-bars {
     display: none;
   }
 }
 /* in HTML: <ul class="hidden--mobile"> */
-@media (max-width: 375px) {
+@media (max-width: 550px) {
   .hidden--mobile {
     display: flex;
     flex-direction:column-reverse;
     align-content: center;
 }
 }
+@media(max-width: 550px) {
+  .allTables {
 
-@media (max-width: 375px) {
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 60px;
+}
+}
+@media (max-width: 550px) {
   #facial {
     display:flex;
-    flex-direction: row-reverse;
-    align-content: right;
-    font-size: 40%;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 50%;
 }
 }
 
+@media(max-width: 550px) {
+  .facial-img {
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
 
+}
+}
+@media(max-width: 550px){
+.home-img {
+  max-width:40vmax;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+    }
+  }
 
 
 
