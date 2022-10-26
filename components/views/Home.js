@@ -3,7 +3,7 @@ import homeImage from "/assets/img/homepic.jpg";
 
 
 export default (state) => html`
-  <section id="creative">
+  <section id="creatives">
   <h1 class ="creative" align = center>Perfect Eyebrows by sharn</h1>
   <h2 align = center>Perfectly threaded eyebrows every time </h2>
   </section>

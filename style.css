@@ -7,18 +7,13 @@ body {
     font-style: normal;
     font-weight: 400;
 }
+/*  h1 heading*/
 .creative {
   color:red;
   font-family:cursive;
   font-size:50px;
 }
-
-#styling{
-  font-family:'Courier New';
-  font-size: 20px;
-  color :red;
-}
-
+/* image on home page*/
 .home-img {
   max-width:25%;
   height: 20%;
@@ -26,7 +21,7 @@ body {
   margin-left: auto;
   display: flex;
     }
-
+/* why facials page image */
 .facial-img {
   display:inline-block;
   vertical-align:top;
@@ -34,7 +29,7 @@ body {
   height: auto;
   float: left;
 }
-
+/*paragraph tag on home page*/
 #good {
   color:black;
   border:  solid 1px;
@@ -89,25 +84,25 @@ nav > ul > li {
   justify-content: center;
   padding-top: 60px;
 }
-
+/*Facials tables*/
 #services {
   background-color: pink;
   border-width:5px;
   margin: auto;
 }
-
+/* Threading table*/
 #services1 {
   background-color: coral;
   border-width:5px;
   margin:auto;
 }
-
+/*Waxing table*/
 #services2 {
    background-color: coral;
   border-width: 5px;
   margin:auto;
 }
-
+/*why facial page*/
 .container{
   position: relative;
   text-align:justify;
@@ -135,7 +130,11 @@ nav > ul > li {
 /* in HTML: <ul class="hidden--mobile"> */
 @media (max-width: 550px) {
   .hidden--mobile {
-    display: flex;
+    display: none !important;
+
+}
+.nav-links{
+  display: flex;
     flex-direction:column-reverse;
     align-content: center;
 }
@@ -149,23 +148,7 @@ nav > ul > li {
   padding-top: 60px;
 }
 }
-@media (max-width: 550px) {
-  #facial {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 50%;
-}
-}
 
-@media(max-width: 550px) {
-  .facial-img {
-    display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-}
-}
 @media(max-width: 550px){
 .home-img {
   max-width:40vmax;
