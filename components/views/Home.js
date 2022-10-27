@@ -21,6 +21,7 @@ export default (state) => html`
     It can be used on any part of the face and body. the process only takes 3-5 mins.
     <p>
   </section>
+  <a href="https://github.com/sharndeep1/Modren-Eyebrows">github link</a>
   <div id="weatherApi">
   <h3>
   The weather in ${state.weather.city} is ${state.weather.description}.
@@ -28,4 +29,5 @@ export default (state) => html`
   ${state.weather.feelsLike}F.
   </h3>
   </div>
+
 `;

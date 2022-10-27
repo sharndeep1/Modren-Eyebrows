@@ -22,7 +22,7 @@ body {
   display: flex;
     }
     #weatherApi{
-      padding-bottom: 10rem;
+      padding-bottom: 5rem;
     }
 /* why facials page image */
 .facial-img {
@@ -107,7 +107,7 @@ nav > ul > li {
   margin:auto;
 }
 #waxingTable{
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
 }
 /*why facial page*/
 .container{
