@@ -1,6 +1,6 @@
 body {
     background-color:aqua;
-  margin-left: 50px;
+  /* margin-left: 50px; */
   color: #000000;
     font-family: 'Montserrat';
     font-size: 18px;
@@ -20,6 +20,9 @@ body {
   margin-right: auto;
   margin-left: auto;
   display: flex;
+    }
+    #weatherApi{
+      padding-bottom: 10rem;
     }
 /* why facials page image */
 .facial-img {
@@ -46,13 +49,14 @@ img{
 }
 
 .footer {
-  position: fixed;
+   position:fixed;
   left: 0;
   bottom: 0;
   width: 100%;
   background-color:red;
   color: white;
   text-align: center;
+  z-index: 999;
 }
 
 nav {
@@ -101,6 +105,9 @@ nav > ul > li {
    background-color: coral;
   border-width: 5px;
   margin:auto;
+}
+#waxingTable{
+  padding-bottom: 10rem;
 }
 /*why facial page*/
 .container{

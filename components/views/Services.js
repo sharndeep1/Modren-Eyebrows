@@ -94,7 +94,7 @@ export default (state) => html`
     </table>
     </div>
 
-    <div>
+    <div id = waxingTable>
     <table id="services2" border="1">
     <caption><b> Waxing </b></caption>
       <tr>
